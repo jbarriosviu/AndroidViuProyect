@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class TalleresAdapter(private val talleres:List<String>) : RecyclerView.Adapter<TalleresViewHolder>(){
+class TalleresAdapter(private val talleres:List<TalleresMenu>) : RecyclerView.Adapter<TalleresViewHolder>(){
 
     //Se pinta un elemento o vista dentro del Recyclerview
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TalleresViewHolder {
@@ -17,6 +17,6 @@ class TalleresAdapter(private val talleres:List<String>) : RecyclerView.Adapter<
     }
 
     override fun onBindViewHolder(holder: TalleresViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.render(talleres[position])
     }
 }

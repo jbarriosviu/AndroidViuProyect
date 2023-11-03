@@ -39,4 +39,10 @@
         android:layout_height="wrap_content"
         android:text="@string/talleres" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTalleres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
