@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PsicologiaApp</string>
+
+    <!--CANALES  -->
+    <string name="tituloMenu">Menu</string>
+    <string name="citas">Citas</string>
+    <string name="talleres">Talleres</string>
+
 </resources>

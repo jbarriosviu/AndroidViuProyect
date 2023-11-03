@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.PsicologiaApp" parent="Base.Theme.PsicologiaApp" />
+
+    <style name="SubTituloMenu">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/canal_subtitle_text</item>
+    </style>
+
 </resources>
