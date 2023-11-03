@@ -3,8 +3,8 @@ package es.repositoriocompartido.psicologiaapp
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class MenuCitasAdapter ():RecyclerView.Adapter<MenuCitasViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuCitasViewHolder {
+class CitasAdapter (private val citas: List<String>):RecyclerView.Adapter<CitasViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CitasViewHolder {
         TODO("Not yet implemented")
     }
 
@@ -12,7 +12,7 @@ class MenuCitasAdapter ():RecyclerView.Adapter<MenuCitasViewHolder>() {
         TODO("Not yet implemented")
     }
 
-    override fun onBindViewHolder(holder: MenuCitasViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CitasViewHolder, position: Int) {
         TODO("Not yet implemented")
     }
 }
