@@ -15,9 +15,19 @@ class MenuActivity : AppCompatActivity() {
         TalleresMenu.OTROS
     )
 
+    private val citas = listOf(
+        Cita("Repositorio Compartido", TalleresMenu.OTROS),
+        Cita("Repositorio Compartido", TalleresMenu.AUTOESTIMA),
+        Cita("Repositorio Compartido", TalleresMenu.CRIANZA)
+    )
+
     //Recycler Talleres
     private lateinit var rvTalleres:RecyclerView
     private lateinit var talleresAdapter: TalleresAdapter
+
+    //Recycler Citas
+    private lateinit var rvCitas:RecyclerView
+    private lateinit var citasAdapter: CitasAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,11 +39,16 @@ class MenuActivity : AppCompatActivity() {
 
     private fun initComponent(){
         rvTalleres = findViewById(R.id.rvTalleres)
+        rvCitas = findViewById(R.id.rvCitas)
     }
 
     private fun initUI(){
         talleresAdapter = TalleresAdapter(talleres)
         rvTalleres.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         rvTalleres.adapter = talleresAdapter
+
+        citasAdapter = CitasAdapter(citas)
+        rvCitas.layoutManager = LinearLayoutManager(this)
+        rvCitas.adapter = citasAdapter
     }
 }

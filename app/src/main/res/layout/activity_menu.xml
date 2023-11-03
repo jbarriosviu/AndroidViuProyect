@@ -25,18 +25,6 @@
         android:layout_marginHorizontal="32dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/citas" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCitas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        style="@style/SubTituloMenu"
-        android:layout_marginHorizontal="32dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/talleres" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -44,5 +32,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"/>
+
+    <TextView
+        style="@style/SubTituloMenu"
+        android:layout_marginHorizontal="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/citas" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
