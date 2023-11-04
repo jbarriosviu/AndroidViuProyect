@@ -3,6 +3,7 @@ package es.repositoriocompartido.psicologiaapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnMenosHijos: FloatingActionButton
     private lateinit var edtSueldo: EditText
     private lateinit var btnDescuento: Button
+    private lateinit var btnOfertaPsicologica: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -52,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         btnMenosHijos = findViewById(R.id.btnMenosHijos)
 
         btnDescuento = findViewById(R.id.btnDescuento)
+        btnOfertaPsicologica = findViewById(R.id.btnOfertaPsicologica)
 
     }
 
@@ -74,6 +77,12 @@ class MainActivity : AppCompatActivity() {
         btnMenosHijos.setOnClickListener {
             if(hijos>0) hijos -= 1
             setHijo()
+        }
+
+        //Llama a Activity de Menu
+        btnOfertaPsicologica.setOnClickListener {
+            Log.i("MENU --------- ","LANZAMOS MENU")
+            navegarHaciaApp(MenuActivity::class.java)
         }
 
 
@@ -100,5 +109,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun setHijo() {
         txtHijos.text = hijos.toString()
+    }
+
+    fun navegarHaciaApp(clase:Class<*>){
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }
