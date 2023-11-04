@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         btnDescuento = findViewById(R.id.btnDescuento)
         btnOfertaPsicologica = findViewById(R.id.btnOfertaPsicologica)
 
+        edtSueldo = findViewById<EditText>(R.id.edtSueldo)
     }
 
     private fun initListener(){
@@ -86,13 +87,16 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-//        //Calculo del IMC
-//        btnCalculate.setOnClickListener{
-//            val imc:Double = calcularIMC()
-//            val intent = Intent(this,ResultImcMejoradoActivity::class.java)
-//            intent.putExtra("IMC",imc)
-//            startActivity(intent)
-//        }
+        //Descuentos
+        btnDescuento.setOnClickListener{
+            val intent = Intent(this,DescuentoActivity::class.java)
+            intent.putExtra("sexo",hombreSeleccionado)
+            intent.putExtra("edad",edad)
+            intent.putExtra("hijos",hijos)
+            intent.putExtra("sueldo",edtSueldo.text.toString())
+
+            startActivity(intent)
+        }
     }
 
     fun cambiarColorSexo(esHombre:Boolean){

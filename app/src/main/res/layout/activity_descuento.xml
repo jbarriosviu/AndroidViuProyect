@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="16dp"
     android:paddingVertical="32dp"
-    android:background="@color/card_Elementos"
-    tools:context="es.repositoriocompartido.imcMejorado.ResultImcMejoradoActivity">
+    android:background="@color/base"
+    tools:context="es.repositoriocompartido.psicologiaapp.DescuentoActivity">
 
     <TextView
         android:id="@+id/txtResultado"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/resultado"
         android:textAllCaps="true"
-        android:textColor="@color/card_Elementos"
+        android:textColor="@color/card_color"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +29,11 @@
         app:layout_constraintTop_toBottomOf="@id/txtResultado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btnReCalculate"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        app:cardBackgroundColor="@color/card_Elementos">
+        app:cardBackgroundColor="@color/card_color_no_selected">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,38 +41,59 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtEstado"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAllCaps="true"
-                android:textColor="@color/card_Elementos"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:text="NORMAL" />
+<!--            <TextView-->
+<!--                android:id="@+id/txtResultadoSexo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:text="sexo" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtResultadoEdad"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:text="edad" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtResultadoHijos"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:text="hijos" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtResultadoSueldo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:text="sueldo" />-->
 
             <TextView
-                android:id="@+id/txtIMC"
+                android:id="@+id/txtResultadoDescuento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="96sp"
+                android:textSize="36sp"
                 android:textStyle="bold"
-                tools:text="IMC" />
+                android:text="@string/resultadoDescuento" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btnReCalculate"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:background="@color/card_Elementos"
-        android:text="@string/btnDescuento"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

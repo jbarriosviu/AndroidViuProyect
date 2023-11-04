@@ -17,5 +17,6 @@
     <string name="btnDescuento">Con data ingresada solicitada descuento</string>
     <string name="resultado">Resultado</string>
     <string name="titulo">PsicoFamily</string>
+    <string name="resultadoDescuento">FELICITACIONES TIENE 20% de DESCUENTO, ACERQUESE A OFICINA</string>
 
 </resources>
