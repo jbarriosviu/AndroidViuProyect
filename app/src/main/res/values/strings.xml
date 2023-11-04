@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">PsicologiaApp</string>
 
-    <!--CANALES  -->
-    <string name="tituloMenu">Menu</string>
-    <string name="citas">Citas</string>
+    <!--TALLERES  -->
+    <string name="tituloMenu">Oferta psicológica</string>
     <string name="talleres">Talleres</string>
+    <string name="citas">Citas</string>
+
+    <!--MAIN -->
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="sueldo">Sueldo en dólares $</string>
+    <string name="hijos">Hijos</string>
+    <string name="oferta">Ver Oferta Psicológica</string>
+    <string name="edad">Edad</string>
+    <string name="ingresarSueldo">Ingresar sueldo $</string>
+    <string name="btnDescuento">Con data ingresada solicitada descuento</string>
+    <string name="resultado">Resultado</string>
+    <string name="titulo">PsicoFamily</string>
 
 </resources>

@@ -13,4 +13,13 @@
     <color name="canal_technology_category">#FF9800</color>
     <color name="canal_cooking_category">#00BCD4</color>
     <color name="canal_other_category">#4CAF50</color>
+
+    <!--IMC MEJORADA COLORS-->
+    <color name="base">#ECE3CE</color>
+    <color name="card_color_no_selected">#739072</color>
+    <color name="card_color">#4F6F52</color>
+    <color name="card_Elementos">#3A4D39</color>
+    <color name="subtitulos">#FFFFFFFF</color>
+    <color name="disminuir">#F1948A</color>
+    <color name="aumentar">#F9E79F</color>
 </resources>
