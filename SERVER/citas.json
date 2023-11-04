@@ -1,0 +1,47 @@
+{
+    "data":{
+        "citas":[
+            {
+                "nombre":"Escuela matrimonios",
+                "categoria":0
+            },
+            {
+                "nombre":"Superandote a ti mismo",
+                "categoria": 1
+            },
+            {
+                "nombre":"Montesori",
+                "categoria": 2
+            },       
+            {
+                "nombre":"Alcholicos anónimos",
+                "categoria": 3
+            },
+            {
+                "nombre":"Citas de pareja",
+                "categoria":0
+            },
+            {
+                "nombre":"Autoestima baja?",
+                "categoria": 1
+            },
+            {
+                "nombre":"Como cuidar la mente del recién nacido",
+                "categoria": 2
+            },
+            {
+                "nombre":"Convivencia en apuros",
+                "categoria":0
+            },
+            {
+                "nombre":"Timidez al hablar",
+                "categoria": 1
+            },
+            {
+                "nombre":"Cuidado psicológico en infantes",
+                "categoria": 2
+            }
+        ],
+        "version":"1.0.0"
+    }
+}

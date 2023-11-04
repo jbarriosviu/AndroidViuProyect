@@ -1,0 +1,23 @@
+{
+    "data":{
+        "canales":[
+            {
+                "nombre":"TEDx Talks",
+                "categoria":0
+            },
+            {
+                "nombre":"Derivando",
+                "categoria": 2
+            },
+            {
+                "nombre":"Cocina con Coqui",
+                "categoria": 1
+            },       
+            {
+                "nombre":"Sensacine",
+                "categoria": 3
+            }
+        ],
+        "version":"1.0.0"
+    }
+}
