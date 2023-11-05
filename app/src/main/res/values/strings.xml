@@ -10,7 +10,7 @@
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
     <string name="sueldo">Sueldo en dólares $</string>
-    <string name="hijos">Hijos</string>
+    <string name="hijos">¿Tiene hijos?</string>
     <string name="oferta">Ver Oferta Psicológica</string>
     <string name="edad">Edad</string>
     <string name="ingresarSueldo">Ingresar sueldo $</string>
