@@ -52,7 +52,7 @@
                 android:src="@drawable/ic_man"
                 app:tint="@color/white"
                 android:layout_marginBottom="8dp"
-                />
+                tools:ignore="ContentDescription" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                 android:src="@drawable/ic_woman"
                 app:tint="@color/white"
                 android:layout_marginBottom="8dp"
-                />
+                tools:ignore="ContentDescription" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -140,12 +140,12 @@
                 android:id="@+id/rngEdad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4dp"
                 android:stepSize="1"
                 android:valueFrom="18"
                 android:valueTo="85"
-                android:layout_margin="4dp"
                 app:backgroundTint="@color/card_Elementos"
-                />
+                tools:ignore="SpeakableTextPresentCheck" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.cardview.widget.CardView>
@@ -198,7 +198,8 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_menos"
                     app:backgroundTint="@color/card_Elementos"
-                    app:tint="@color/disminuir" />
+                    app:tint="@color/disminuir"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnMasHijos"
@@ -206,7 +207,8 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_mas"
                     app:backgroundTint="@color/card_Elementos"
-                    app:tint="@color/aumentar" />
+                    app:tint="@color/aumentar"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
@@ -229,15 +231,20 @@
         android:id="@+id/edtSueldo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ingresarSueldo"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/stylo_border"
+        android:autofillHints=""
+        android:hint="@string/ingresarSueldo"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textAlignment="center"
         android:textColor="@color/card_Elementos"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSueldo"
-        android:textSize="30sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        />
+        tools:ignore="TextFields" />
 
     <Button
         android:id="@+id/btnDescuento"
@@ -258,4 +265,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

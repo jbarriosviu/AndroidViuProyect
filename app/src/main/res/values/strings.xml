@@ -18,5 +18,17 @@
     <string name="resultado">Resultado</string>
     <string name="titulo">PsicoFamily</string>
     <string name="resultadoDescuento">FELICITACIONES TIENE 20% de DESCUENTO, ACERQUESE A OFICINA</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="formulario_recogida_datos">Formulario Recogida Datos</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="para_atenderle_correctamente_complete_los_siguientes_datos">Para atenderle correctamente, complete los siguientes datos</string>
+    <string name="imagen_cabeza_fondo_verde">imagen_cabeza_fondo _verde</string>
+    <string name="enviar">Enviar</string>
+    <string name="introduzca_su_correo_electronico">Introduzca su correo Electronico</string>
+    <string name="introduzca_su_n_mero_de_tel_fono">Introduzca su Número de Teléfono:</string>
+    <string name="introduzca_numero_telefono">Introduzca su Número de Teléfono:</string>
+    <string name="introduzca_correo_electronico">Introduzca su Correo Electrónico:</string>
 
 </resources>

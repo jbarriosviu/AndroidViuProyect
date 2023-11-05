@@ -7,10 +7,13 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toolbar
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -93,9 +96,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("sexo",hombreSeleccionado)
             intent.putExtra("edad",edad)
             intent.putExtra("hijos",hijos)
-            intent.putExtra("sueldo",edtSueldo.text.toString())
-
-            startActivity(intent)
+            if (!edtSueldo.getText().toString().isEmpty()) {
+                intent.putExtra("sueldo", edtSueldo.text.toString())
+                startActivity(intent)
+            } else
+                Toast.makeText(this,"Debe completar los datos del salario",Toast.LENGTH_LONG).show()
         }
     }
 

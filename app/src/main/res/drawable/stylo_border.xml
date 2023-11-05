@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+<!-- Definición de un nuevo estilo para añadir bordes con color y redondeados a los cuadros de
+texto, además se define el padding.
+Este estilo aparece como una línea android en la definición el componente
+android:background="@drawable/stylo_borde_editex"-->
+
+<stroke android:width="1sp"
+    android:color="@color/card_Elementos" />
+<padding android:bottom="5sp"
+    android:left="5sp"
+    android:right="5sp"
+    android:top="5sp" />
+<corners android:radius="10dp" />
+</shape>
