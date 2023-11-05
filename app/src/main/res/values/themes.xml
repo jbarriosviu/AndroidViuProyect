@@ -9,7 +9,7 @@
 
     <style name="SubTituloMenu">
         <item name="textAllCaps">true</item>
-        <item name="android:textColor">@color/canal_subtitle_text</item>
+        <item name="android:textColor">@color/subtitulo_text</item>
         <item name="android:textSize">35dp</item>
 
     </style>

@@ -13,23 +13,23 @@ class TalleresViewHolder(view: View): RecyclerView.ViewHolder(view){
         when(taller){
             TalleresMenu.PAREJA -> {
                 txtNombreTaller.text="PAREJA"
-                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.canal_technology_category))
+                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.categoria_pareja))
             }
             TalleresMenu.AUTOESTIMA -> {
                 txtNombreTaller.text="AUTOESTIMA"
-                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.canal_cooking_category))
+                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.categoria_autoestima))
             }
             TalleresMenu.CRIANZA -> {
                 txtNombreTaller.text="CRIANZA"
-                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.canal_other_category))
+                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.categoria_crianza))
             }
             TalleresMenu.OTROS -> {
                 txtNombreTaller.text="OTROS"
-                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.canal_technology_category))
+                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.categoria_pareja))
             }
             else -> {
                 txtNombreTaller.text="OTROS"
-                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.canal_technology_category))
+                divider.setBackgroundColor(ContextCompat.getColor(divider.context,R.color.categoria_autoestima))
             }
         }
     }
